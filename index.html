@@ -18,7 +18,7 @@
       </div>
 
       <!-- File Upload Section -->
-      <div class="file-upload-wrapper">
+      <form class="file-upload-wrapper">
         <h2>Upload Your Data File</h2>
         <div class="file-upload">
           <label for="fileInput" class="file-upload-label">
@@ -43,29 +43,41 @@
           </label>
         </div>
         <div class="analyze-btn-wrapper">
-          <button>ANALYZE</button>
+          <button type="submit">ANALYZE</button>
         </div>
-      </div>
+      </form>
 
       <!-- Filter By Category -->
       <div class="filter-by-category">
         <select class="category-select">
           <option>Category 1</option>
-        </select>
-        <select class="category-select">
           <option>Category 2</option>
-        </select>
-        <select class="category-select">
           <option>Category 3</option>
         </select>
         <select class="category-select">
-          <option>Category 4</option>
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
         </select>
         <select class="category-select">
-          <option>Category 5</option>
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
         </select>
         <select class="category-select">
-          <option>Category 6</option>
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
+        </select>
+        <select class="category-select">
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
+        </select>
+        <select class="category-select">
+          <option>Category 1</option>
+          <option>Category 2</option>
+          <option>Category 3</option>
         </select>
       </div>
 
@@ -227,7 +239,7 @@
                       </p>
                     </div>
                     <div class="accordion-content-right">
-                      <div class="status completed">In progress</div>
+                      <div class="status completed">Complete</div>
   
                       <div class="action-wrapper">
                         <button>
@@ -480,7 +492,7 @@
                     </p>
                   </div>
                   <div class="accordion-content-right">
-                    <div class="status completed">In progress</div>
+                    <div class="status completed">Complete</div>
 
                     <div class="action-wrapper">
                       <button>
@@ -725,7 +737,7 @@
     <!-- JavaScript files -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins.js"></script>
-    <script src="./script.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script>
       $(document).ready(function () {
         $("select").niceSelect();

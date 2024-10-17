@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Poppins, sans-serif;
   font-style: normal;
 }
+
 .section-container {
   max-width: 1466px;
   width: 100%;
@@ -66,6 +68,11 @@ body {
   letter-spacing: 0.4px;
 }
 
+.file-upload-label.dragging {
+  border-color: #1abc9c;
+  background-color: #f0fdf4;
+}
+
 .analyze-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -82,7 +89,7 @@ body {
   font-weight: 600;
   line-height: 164%;
   text-transform: uppercase;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .analyze-btn-wrapper button:hover {
@@ -112,6 +119,14 @@ body {
   font-weight: 500;
   line-height: 164%;
   text-transform: capitalize;
+}
+
+.nice-select .option.selected {
+  font-weight: 600;
+}
+
+.nice-select .list{
+  font-size: 14px;
 }
 
 .nice-select::after {
@@ -168,6 +183,7 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
+  gap: 12px;
 }
 
 .accordion-content-left {
@@ -175,12 +191,12 @@ body {
   width: 100%;
 }
 
-
 .accordion-content-right {
   display: flex;
   flex-direction: column;
   align-self: stretch;
   justify-content: space-between;
+  gap: 12px;
 }
 
 .status {
@@ -195,6 +211,7 @@ body {
   letter-spacing: -0.32px;
   border-radius: 20px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .in-progress {
@@ -213,19 +230,19 @@ body {
   text-transform: uppercase;
 }
 
-.accordion-content-left p{
-  color: #6B6B6B;
+.accordion-content-left p {
+  color: #6b6b6b;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 164%;
   text-transform: capitalize;
 }
-.accordion-content-left ul{
+.accordion-content-left ul {
   margin: 10px 0;
 }
 
-.accordion-content-left ul li{
+.accordion-content-left ul li {
   color: #666;
   font-size: 14px;
   font-style: normal;
@@ -265,4 +282,218 @@ body {
 
 .trash-bg:hover {
   box-shadow: 0px 4px 6px #e74c3c !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .section-container {
+    padding: 0 50px;
+    gap: 24px;
+  }
+
+  .analyze-btn-wrapper button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-container {
+    padding: 0 30px;
+  }
+
+  .file-upload-wrapper h2 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .file-upload-label {
+    padding: 20px;
+  }
+
+  .upload-box p {
+    font-size: 18px;
+  }
+
+  .analyze-btn-wrapper button {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .accordion-button {
+    padding: 20px 32px;
+  }
+
+  .accordion-content-wrapper {
+    padding: 12px;
+  }
+
+  .accordion-content-left h3,
+  .accordion-content-left p,
+  .accordion-content-left ul li {
+    font-size: 15px;
+  }
+
+  .action-wrapper {
+    gap: 18px;
+  }
+
+  .action-wrapper button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .action-wrapper button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 0 20px;
+  }
+
+  .section-header h1 {
+    font-size: 32px;
+  }
+
+  .section-header p {
+    font-size: 14px;
+  }
+
+  .file-upload-wrapper h2 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .file-upload-label {
+    padding: 16px;
+  }
+
+  .upload-box p {
+    font-size: 16px;
+  }
+
+  .accordion-button {
+    padding: 16px 24px;
+  }
+  .accordion-section-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .accordion-content-wrapper {
+    padding: 8px;
+  }
+
+  .accordion-content-left h3,
+  .accordion-content-left p,
+  .accordion-content-left ul li {
+    font-size: 14px;
+  }
+
+  .action-wrapper {
+    gap: 16px;
+  }
+
+  .action-wrapper button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .action-wrapper button svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header h1 {
+    font-size: 24px;
+  }
+
+  .section-header p {
+    font-size: 12px;
+  }
+
+  .file-upload-wrapper h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .file-upload-label {
+    padding: 12px;
+  }
+
+  .upload-box p {
+    font-size: 14px;
+  }
+
+  .upload-box svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .analyze-btn-wrapper button {
+    font-size: 16px;
+  }
+
+  .nice-select{
+    font-size: 15px;
+  }
+
+  .nice-select .list{
+    font-size: 13px;
+  }
+  
+
+  .accordion-section-wrapper h2 {
+    font-size: 18px;
+  }
+
+  .accordion-button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .accordion-content-left h3,
+  .accordion-content-left p,
+  .accordion-content-left ul li {
+    font-size: 12px;
+  }
+
+  .status {
+    font-size: 14px;
+  }
+
+  .action-wrapper {
+    gap: 12px;
+  }
+
+  .action-wrapper button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .action-wrapper button svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .analyze-btn-wrapper button {
+    font-size: 14px;
+  }
+
+  .accordion-content-wrapper {
+    flex-direction: column;
+  }
+
+  .status {
+    font-size: 12px;
+  }
+
+  .action-wrapper {
+    justify-content: center;
+  }
 }
