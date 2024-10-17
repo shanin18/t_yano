@@ -106,7 +106,7 @@ body {
 
 .nice-select {
   flex: 1;
-  padding: 24px 40px;
+  padding: 24px 30px;
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -125,7 +125,7 @@ body {
   font-weight: 600;
 }
 
-.nice-select .list{
+.nice-select .list {
   font-size: 14px;
 }
 
@@ -215,11 +215,11 @@ body {
 }
 
 .in-progress {
-  background: #33cd55;
+  background: #2c3e50;
 }
 
 .completed {
-  background: #2c3e50;
+  background: #33cd55;
 }
 
 .accordion-content-left h3 {
@@ -437,14 +437,16 @@ body {
     font-size: 16px;
   }
 
-  .nice-select{
+  .nice-select {
     font-size: 15px;
   }
+  .nice-select::after {
+    right: 20px;
+  }
 
-  .nice-select .list{
+  .nice-select .list {
     font-size: 13px;
   }
-  
 
   .accordion-section-wrapper h2 {
     font-size: 18px;
