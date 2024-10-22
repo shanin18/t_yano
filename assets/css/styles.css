@@ -110,7 +110,6 @@ body {
   border-radius: 8px;
   background: #ecf0f1;
   color: #2c3e50;
-  -webkit-text-stroke-width: 0.5;
   -webkit-text-stroke-color: #2c3e50;
   font-size: 16px;
   font-style: normal;
@@ -119,6 +118,12 @@ body {
   text-transform: capitalize;
   margin-bottom: 0;
   border: none;
+  transition-duration: .4s;
+}
+
+.category-select:hover {
+  background: #2c3e50;
+  color: #fff;
 }
 
 .accordion-section-wrapper h2 {
